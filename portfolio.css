@@ -1,0 +1,109 @@
+.section {
+    padding: 30px 7%;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+.navbar .logo {
+    width: 250px; /* Adjust width to your desired size */
+    height: auto; /* Keeps the aspect ratio intact */
+    cursor: pointer;
+    margin-top: -3%;
+    padding: 10px;
+    margin-left: -2%;
+}
+image{
+    width:80%;
+    height:60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.image img {
+    height: 70%; /* Reduce the height percentage */
+    position:absolute;
+    left: 90%;
+    top: 100px;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+.section:nth-child(even) {
+    background: #ffffff;
+}
+.section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section p, .section ul, .section form {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    padding: 8px 0;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.section + .section {
+    margin-top: 0px; /* Reduce gap between sections */
+}
+
+.project {
+    width: 30%;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+form input, form textarea, form button {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: rgb(230, 59, 59);
+    color: white;
+    border:black;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: rgb(59, 147, 209);
+}
